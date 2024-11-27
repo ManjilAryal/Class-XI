@@ -1,0 +1,113 @@
+body{
+    background-color: rgb(163, 209, 240);
+    font-family: Arial, Helvetica, sans-serif;
+    padding: 0;
+    margin: 0;
+}
+.heading{
+    display: grid;
+    grid-template-columns: 1fr 80px;
+    background-color: rgb(163,209, 240);
+    box-shadow: 0 2px 5px rgb(109, 168, 223);
+}
+h1{
+    margin-bottom: 2px;
+}
+h5{
+    margin: 0;
+}
+.name{
+    text-align: center;
+}
+.login{
+    text-align: center;
+}
+.signin{
+    background-color: rgb(48, 55, 59);
+    color: white;
+    padding: 8px;
+    margin-top: 5px;
+    border-radius: 5px;
+    cursor: pointer;
+    border: none;
+}
+.signin:hover{
+    background-color: white;
+    color: rgb(48, 55, 59);
+    transition: 0.1s;
+}
+.sidebar{
+    padding: 0;
+    box-shadow:2px 0 5px rgb(109, 168, 223);
+    margin-top: 3px;
+}
+.tabs{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+    background-color: rgb(163, 209, 240);
+}
+.tab-button{
+    padding: 10px;
+    font-size: large;
+    border: none;
+    background-color: rgb(163, 209, 240);
+    margin-left:0;
+    margin-right:0;
+    cursor: pointer;
+
+}
+.tab-button:hover,.tab-button.active{
+    border: 2px solid white;
+    color: #4b4848;
+    border-right: none;
+    border-left: none;
+    border-top: none;
+}
+.tab-button:hover{
+    border: 2px solid white;
+    color: #4b4848;
+    background-color: rgb(160, 203, 231);
+    border-right: none;
+    border-left: none;
+    border-bottom: none;
+}
+
+.content{
+    margin: 10px;
+}
+.text{
+    padding: 50px;
+    display: none;
+    font-size: xx-large;
+    align-items: center;
+}
+.text.active{
+    display: block;
+}
+p{
+    margin: 0;
+}
+@media(max-width:425px){
+    .heading{
+        grid-template-columns: 1fr 60px;
+    }
+    h1{
+        font-size: large;
+    }
+    h3{
+        font-size: large;
+    }
+    .text,.text.active{
+        font-size: large;
+    }
+    .tab-button{
+        padding: 5px;
+        font-size: sm;
+    }
+}
+@media(max-width:375px){
+    .tab-button{
+        padding: 2px;
+        font-size: small
+    }
+}
